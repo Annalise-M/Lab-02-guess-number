@@ -23,7 +23,21 @@
     <link rel="stylesheet" href="style.css">
     <title>Unlease the Cage!</title>
 </head>
-
+<!-- 
+    * Instructions
+    * Image => to change depending upon results
+    * have INPUT space for user guess
+    * have SUBMIT button for user guess
+        => USERGUESS (actual number)
+    *   1. display GUESSING MESSAGE (too high or two low)
+        2. display TRIES REMAINING (number 4-- )
+        => if NO TRIES REMAINING
+            - display LOSE message
+            - *disable game
+        => else Correct guess 
+            - display WIN message
+            - *disable game
+ -->
 <body>
     <div id="main-body">
         <h2 id="unleash-the-cage">I am the great and powerful Cage!</h2>
@@ -35,11 +49,15 @@
             <p>You get only 4 tries to unleash the inner Cage!</p> 
             <p>If you lose, all will be DOOMED!</p>
         </h1>
-        
+        <div>
+            <input id="user-guess" type="number" min="1" max="20">
+        </div>
         <button id="submit-button">Submit</button>
         <p></p>
         <p>
-            <span id="number-of-tries-left">You've got ${} of tries left!</span>
+            <p>Tries left:
+                <span id="number-of-tries-left"></span>
+            </p>
         </p>
         <p>
             <span id="wins-span">Number of Wins:</span>
