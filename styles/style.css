@@ -29,6 +29,7 @@ main {
     justify-content: center;
     align-items: center;
     margin-bottom: calc(var(--footer-height));
+    justify-content: space-evenly;
 }
 
 section {
@@ -78,8 +79,6 @@ h2 {
 header img {
     height: var(--header-height);
 }
-
-
 
 content {
     width: 80%;
