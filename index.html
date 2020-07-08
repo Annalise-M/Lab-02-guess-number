@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/home.css">
-    <title>Document</title>
+    <title>THE CAGE</title>
 </head>
 
 <body>
@@ -24,8 +24,6 @@
     <title>Unlease the Cage!</title>
 </head>
 <!-- 
-    * Instructions
-    * Image => to change depending upon results
     * have INPUT space for user guess
     * have SUBMIT button for user guess
         => USERGUESS (actual number)
@@ -40,30 +38,45 @@
  -->
 <body>
     <div id="main-body">
+
         <h2 id="unleash-the-cage">I am the great and powerful Cage!</h2>
+
         <div>
             <img id="caged-cage" src="https://www.placecage.com/gif/200/300"/>
         </div>
+        
+        <!-- INSTRUCTIONS -->
         <h1 id="instructions"> 
             <p>What number am I thinking of (between 1 - 20)?</p> 
             <p>You get only 4 tries to unleash the inner Cage!</p> 
             <p>If you lose, all will be DOOMED!</p>
         </h1>
+
+        <!-- INPUT / USER GUESS -->
         <div>
-            <input id="user-guess" type="number" min="1" max="20">
+            <input id="num-guess" type="number" min="1" max="20">
         </div>
+
+        <!-- BUTTON / SUMBIT GUESS -->
         <button id="submit-button">Submit</button>
-        <p></p>
+
+            <!-- DISPLAY: WHEN BUTTON IS PUSHED
+            TOO HIGH / TOO LOW MESSAGE
+             -->
+                <span id="high-low" hidden></span>
+
+                <break></break>
+
+                <!-- DISPLAY:  -->
+             <!-- TIMES REMAINING -->
         <p>
-            <p>Tries left:
-                <span id="number-of-tries-left"></span>
+            <p>Tries Remaining:
+                <span id="tries-left"></span>
             </p>
         </p>
+            <!-- WIN / LOSS MESSAGE -->
         <p>
-            <span id="wins-span">Number of Wins:</span>
-        </p>
-        <p>
-            <span id="losses-span">Number of Losses:</span>
+            <span id="results"></span>
         </p>
     </div>
 
