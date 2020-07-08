@@ -17,8 +17,15 @@ export function compareNumbers(guess, correctNumber) {
     } else {
         triesRemaining--;
         results.textContent = `You got it! You win!`;
-
     }
     tries.textContent = triesRemaining;
     // console.log(correctNumber, triesRemaining, guess);
 }
+
+
+export function offButton() {
+    if (triesRemaining === 0) {
+        document.getElementById('submit-button').disabled = true;
+    }
+}
+
