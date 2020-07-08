@@ -9,13 +9,15 @@ let triesRemaining = 4;
 export function compareNumbers(guess, correctNumber) {
     
     if (guess > correctNumber) {
-        results.textContent = `Too high! Try again!`;
         triesRemaining--;
+        results.textContent = `Too high! Try again!`;
     } else if (guess < correctNumber) {
         triesRemaining--;
         results.textContent = `Too low! ${triesRemaining} tries left!`;
     } else {
+        triesRemaining--;
         results.textContent = `You got it! You win!`;
+
     }
     tries.textContent = triesRemaining;
     // console.log(correctNumber, triesRemaining, guess);
